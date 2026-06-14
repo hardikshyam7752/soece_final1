@@ -17,7 +17,10 @@ app.use((req, res, next) => {
 
 
 app.use(cors({
-    origin: 'https://www.soece-nitj.in',
+    origin: [
+        "http://localhost:5173",
+        "https://www.soece-nitj.in"
+    ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));

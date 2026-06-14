@@ -48,14 +48,14 @@ const calendarEvents = [
   }
 ];
 const notices = [
-  {
-    title: "Treasure hunt",
-    category: "Competition",
-    venue: "To Be Announced",
-    date: "25 April 2026",
-    time: "To Be Announced",
-    isLive: true
-  },
+  // {
+  //   title: "Treasure hunt",
+  //   category: "Competition",
+  //   venue: "To Be Announced",
+  //   date: "25 April 2026",
+  //   time: "To Be Announced",
+  //   isLive: true
+  // },
   {
     title: "Mind the Mind",
     category: "Competition",

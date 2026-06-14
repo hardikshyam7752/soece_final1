@@ -1,8 +1,10 @@
 import "./Intro_page.css";
+import CircuitBackground from "../CircuitBackground";
 
 const Intro_page = () => {
     return (
         <section className="intro-container">
+            <CircuitBackground useWindowSize={true} />
             <div className="intro-content">
                 <h1 className="soece-title">SoECE</h1>
                 <p className="tagline">LET'S MAKE ELECTRONICS EASY</p>

@@ -1,13 +1,11 @@
 .intro-container {
-    /* Height is 100vh minus the Navbar height (12vh) to prevent scrolling */
     height: 88vh;
     width: 100%;
-    /* Gradient from Deep Navy to a slightly lighter tech-blue */
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden REMOVED — circuit canvas clip hoti thi */
     position: relative;
 }
 
@@ -22,6 +20,7 @@
     opacity: 0.15;
     top: 20%;
     left: 10%;
+    z-index: 0;
 }
 
 .intro-content {
@@ -29,29 +28,36 @@
     z-index: 2;
     color: white;
     padding: 20px;
+    position: relative;
+    /* z-index kaam kare canvas ke upar */
 }
 
 .soece-title {
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(4rem, 10vw, 8rem);
-    /* Fluid typography */
-    font-weight: 700;
+    font-weight: 900;
+    /* 700 → 900 */
     letter-spacing: 12px;
     margin: 0;
-    background: linear-gradient(to bottom, #ffffff, #94a3b8);
+    background: linear-gradient(to bottom, #ffffff, #cbd5e1);
+    /* darker stop bright kiya */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.4)) drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+    /* glow add kiya */
 }
 
 .tagline {
     font-size: clamp(1.2rem, 3vw, 2rem);
-    color: #10b981;
-    /* Matches Logo Emerald Green */
-    font-weight: 300;
+    color: #00ffaa;
+    /* #10b981 → bright green */
+    font-weight: 500;
+    /* 300 → 500 */
     margin-top: -10px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(0, 255, 170, 0.5);
+    /* glow add kiya */
 }
 
 .cta-section {
@@ -63,22 +69,16 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-
     background: linear-gradient(135deg, #c51610, #ff2a1f);
-    /* 🔥 richer red */
     color: white;
     padding: 14px 34px;
-
     border-radius: 50px;
     font-size: 1.1rem;
     font-weight: 600;
-
     text-decoration: none;
     cursor: pointer;
-
     box-shadow: 0 10px 25px rgba(255, 0, 0, 0.35);
     transition: all 0.3s ease;
-
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
     position: relative;
@@ -104,11 +104,14 @@
     font-weight: 400;
     margin-bottom: 5px;
     letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.85);
+    /* ← ADD */
 }
 
 .college-name {
     font-size: 1rem;
-    color: #94a3b8;
+    color: rgba(148, 163, 184, 0.90);
+    /* thoda bright — was #94a3b8 */
     font-weight: 600;
     letter-spacing: 4px;
 }
