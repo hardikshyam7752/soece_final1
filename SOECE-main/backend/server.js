@@ -8,6 +8,18 @@ const { mongoserver } = require('./config/database');
 const app = express();
 
 app.set('trust proxy', 1);
+
+app.use(cors({
+    origin: [
+        "https://soece-nitj.in",
+        "https://www.soece-nitj.in"
+    ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
+app.options('*', cors()); // preflight
+
 // ─── SECURITY HEADERS ─
 // ─── SECURITY HEADERS ─
 app.use(helmet({
@@ -19,15 +31,6 @@ app.use((req, res, next) => {
     next();
 });
 
-
-app.use(cors({
-    origin: [
-        "https://soece-nitj.in",
-        "https://www.soece-nitj.in"
-    ],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-}));
 
 app.use(express.json());
 
