@@ -9,7 +9,11 @@ const app = express();
 
 app.set('trust proxy', 1);
 // ─── SECURITY HEADERS ─
-app.use(helmet());
+// ─── SECURITY HEADERS ─
+app.use(helmet({
+    contentSecurityPolicy: false,  // Frontend pe CSP hai, backend API pe nahi chahiye
+}));
+
 app.use((req, res, next) => {
     res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
     next();
@@ -18,6 +22,7 @@ app.use((req, res, next) => {
 
 app.use(cors({
     origin: [
+        "https://soece-nitj.in",
         "https://www.soece-nitj.in"
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
