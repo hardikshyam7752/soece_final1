@@ -12,39 +12,88 @@ import "./Home.css";
 
 const calendarEvents = [
   {
-    day: "19",
-    month: "Jan",
+    day: "22",
+    month: "Jul",
     type: "Academic",
-    title: "Semester Begins",
-    description: "Start of Even Semester 2025-26, classes commence."
+    title: "Institute Reopens",
+    description: "Institute reopens for Odd Semester 2026-27."
   },
   {
-    day: "09",
-    month: "Feb",
+    day: "27",
+    month: "Jul",
+    type: "Academic",
+    title: "Start of Classes",
+    description: "Odd Semester classes commence. Late registration without fine is open."
+  },
+  {
+    day: "24",
+    month: "Aug",
     type: "Exam",
     title: "Quiz Week 1",
-    description: "First quiz week for all ECE core subjects."
+    description: "First quiz week for all ECE core subjects, 24th to 27th August."
+  },
+  {
+    day: "28",
+    month: "Aug",
+    type: "Event",
+    title: "Sports Fest",
+    description: "Annual sports fest of NIT Jalandhar."
+  },
+  {
+    day: "21",
+    month: "Sep",
+    type: "Exam",
+    title: "Mid Semester Exam",
+    description: "Mid-Sem examinations from 21st September to 28th September."
+  },
+  {
+    day: "17",
+    month: "Oct",
+    type: "Event",
+    title: "NITJ Foundation Day",
+    description: "Foundation Day of NIT Jalandhar (working day)."
+  },
+  {
+    day: "19",
+    month: "Oct",
+    type: "Exam",
+    title: "Quiz Week 2",
+    description: "Second quiz week, 19th to 23rd October."
   },
   {
     day: "09",
-    month: "Mar",
+    month: "Nov",
+    type: "Academic",
+    title: "Mid-Term Break",
+    description: "Diwali and mid-term break from 9th to 13th November."
+  },
+  {
+    day: "16",
+    month: "Nov",
     type: "Exam",
-    title: "Mid Semester Exam",
-    description: "Mid-Sem examinations from 9th March to 17th March."
+    title: "Quiz Week 3",
+    description: "Third quiz week, 16th to 20th November."
   },
   {
-    day: "26",
-    month: "Mar",
-    type: "Event",
-    title: "UTKANSH-26 / TECHNIti-26",
-    description: "Annual technical and cultural fest of NIT Jalandhar, 26-29 March."
+    day: "27",
+    month: "Nov",
+    type: "Academic",
+    title: "Last Day of Classes",
+    description: "Last day of classes for the Odd Semester."
   },
   {
-    day: "11",
-    month: "May",
+    day: "30",
+    month: "Nov",
     type: "Exam",
     title: "End Semester Exam",
-    description: "End-Sem examinations from 11th May to 5th june."
+    description: "End-Sem examinations from 30th November to 12th December, followed by practical exams 14th to 18th December."
+  },
+  {
+    day: "28",
+    month: "Dec",
+    type: "Academic",
+    title: "Winter Vacation",
+    description: "Start of winter vacation."
   }
 ];
 const notices = [
@@ -56,21 +105,37 @@ const notices = [
   //   time: "To Be Announced",
   //   isLive: true
   // },
+  // {
+  //   title: "Mind the Mind",
+  //   category: "Competition",
+  //   venue: "LT 404",
+  //   date: "28 March 2026",
+  //   time: "11:00 AM",
+  //   isLive: false
+  // },
+  // {
+  //   title: "Cricket Tournament",
+  //   category: "Sports",
+  //   venue: "NITJ Main Ground",
+  //   date: "21-22 March 2026",
+  //   time: "09:00 AM",
+  //   isLive: false
+  // }
   {
-    title: "Mind the Mind",
-    category: "Competition",
-    venue: "LT 404",
-    date: "28 March 2026",
-    time: "11:00 AM",
-    isLive: false
+    title: "Departmental Visit",
+    category: "Visit",
+    venue: "E1, ECE Building",
+    date: "15 October 2026",
+    time: "03:30 PM",
+    isLive: true
   },
   {
-    title: "Cricket Tournament",
+    title: "Basketball Competition",
     category: "Sports",
     venue: "NITJ Main Ground",
-    date: "21-22 March 2026",
-    time: "09:00 AM",
-    isLive: false
+    date: "To be announced",
+    time: "To be announced",
+    isLive: true
   }
 ];
 

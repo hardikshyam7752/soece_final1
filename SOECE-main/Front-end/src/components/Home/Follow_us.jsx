@@ -4,6 +4,7 @@ const handleSoon = (e) => {
     alert("🚀 Coming Soon! Stay tuned.");
 };
 
+
 const Follow_us = () => {
     return (
         <div className="follow_us_container">

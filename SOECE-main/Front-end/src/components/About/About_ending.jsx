@@ -51,8 +51,8 @@ const About_ending = () => {
                     <div className="contact-row">
                         <div className="contact-item">
                             <span className="contact-label">Faculty Coordinator</span>
-                            <span className="contact-name">Dr. Indu Saini</span>
-                            <a href="mailto:sainii@nitj.ac.in">sainii@nitj.ac.in</a>
+                            <span className="contact-name">Dr. Manjeet Singh</span>
+                            <a href="mailto:singhm@nitj.ac.in">singhm@nitj.ac.in</a>
                         </div>
 
                         <div className="contact-divider" />
@@ -60,7 +60,7 @@ const About_ending = () => {
                         <div className="contact-item">
                             <span className="contact-label">Student Coordinator</span>
                             <span className="contact-name">Hardik Agarwal</span>
-                            <a href="tel:+91XXXXXXXXXX">+91 8769494606</a>
+                            <a href="tel:+918769494606">+91 8769494606</a>
                         </div>
                     </div>
                 </div>
