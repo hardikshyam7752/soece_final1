@@ -2,14 +2,15 @@ import "./Faculty_page.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import induImage from "../../assets/indu-mam.png";
+import poojaImage from "../../assets/pooja_mam_image.jpg";
 import secondImage from "../../assets/manjeet-sir-new.jpg"; // add second image
+import thirdImage from "../../assets/hemant_sir_image.jpg";
 
 const facultyData = [
     {
-        name: "Dr. Indu Saini",
-        designation: "Associate Professor, ECE Dept.",
-        image: induImage,
+        name: "Dr. Pheiroijam Pooja",
+        designation: "Assistant Professor, ECE Dept.",
+        image: poojaImage,
         quote1:
             "Innovation is not a destination, it's a direction. Every idea we nurture today becomes the foundation someone else will build upon tomorrow.",
         quote2:
@@ -23,7 +24,18 @@ const facultyData = [
             "Innovation and research are the pillars of engineering excellence.",
         quote2:
             "Our aim is to guide students toward strong fundamentals and real-world implementation."
+    },
+
+    {
+        name: "Dr. Hemant Kumar",
+        designation: "Assistant Professor, ECE Dept.",
+        image: thirdImage,
+        quote1:
+            "Excellence in engineering begins with curiosity, innovation, and a commitment to lifelong learning.",
+        quote2:
+            "My goal is to empower students with strong technical foundations and the skills to turn knowledge into practical solutions."
     }
+
 ];
 
 const Faculty_page = () => {
